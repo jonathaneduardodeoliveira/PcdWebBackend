@@ -23,6 +23,10 @@ const Aluno = sequelize.define('Aluno', {
         type: DataTypes.JSON,
         allowNull: true
     },
+    senha: {
+        type: DataTypes.STRING,
+        allowNull: false
+    },
     dataCadastro: {
         type: DataTypes.DATE,
         defaultValue: DataTypes.NOW
